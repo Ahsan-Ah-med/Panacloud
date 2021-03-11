@@ -24,6 +24,7 @@ html {
     margin: .2rem;
     font-family:sans-serif;
     font-weight:550;
+    cursor: pointer;
 }
 .main ul{
   padding-top: 1rem;
