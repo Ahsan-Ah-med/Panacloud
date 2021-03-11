@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANACLOUD</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <img src="./images/logo-color.png" alt="logo">
+        <ul>
+            <a href="#">
+                <li>WHY US</li>
+            </a>
+            <a href="#aboutus">
+                <li>ABOUT</li>
+            </a>
+            <a href="#">
+                <li>SERVICES</li>
+            </a>
+            <a href="#">
+                <li>PORTFOLIO</li>
+            </a>
+            <a href="#">
+                <li>PROCESS</li>
+            </a>
+            <a href="#">
+                <li>REVIEWS</li>
+            </a>
+            <a href="#">
+                <li>OUR SKILLS</li>
+            </a>
+            <a href="#">
+                <li>CONTACT US</li>
+            </a>
+        </ul>
+
+    </div>
+    <section class="sc1">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="./images/A2.png" style="width:100% ">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./images/A1.jpg" style="width:100%">
+
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <div class="adv">
+        <h1>OUR <span id="advt">ADVANTAGES</span></h1>
+        <P>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod<br /> tempor invidunt ut labore
+            et dolore magna aliquyam erat.</P>
+    </div>
+    <div class="our">
+        <div>
+            <img src="./images/inno.png" alt="INNOVATION">
+            <h3>INNOVATION</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod.</p>
+        </div>
+        <div>
+            <img src="./images/Qulity1.png" alt="QUALIYT">
+            <h3>QUALIYT</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod.</p>
+        </div>
+        <div>
+            <img src="./images/Clients.png" alt="EXPERIENCE">
+            <h3>EXPERIENCE</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod.</p>
+        </div>
+        <div>
+            <img src="./images/Expre.png" alt="HAPPY CLIENTS">
+            <h3>HAPPY CLIENTS</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod.</p>
+        </div>
+        <div>
+            <img src="./images/support1.png" alt="SUPPORT">
+            <h3>SUPPORT</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod.</p>
+        </div>
+    </div>
+    <div class="adv about" id="aboutus">
+        <h1>ABOUT <span id="advt">US</span></h1>
+        <div class="about-div">
+            <p>
+                We, at Panacloud, believe that software developers are the most
+                valuable resources of the world in this digital age -
+                even more valuable than oil wells or gold mines.
+                We think that App creation process starts with developer’s
+                selection and training, not when we start working on a
+                particular application. Given these beliefs,
+                we have developed a unique business model that focuses on
+                selecting top students and professionals and then training
+                them completely free of charge to be world-class developers
+                in selected cutting-edge technologies. As a result,
+                we are able to train and retain a large number of
+                developers every year in the latest state-of-the-art
+                technologies specifically needed to deliver products
+                and services to the above-mentioned target market segments.
+                <br />
+                <br />
+                <button>READ MORE</button>
+            </p>
+            <img src="./images/about-img.png" alt="" style="aling:right;">
+        </div>
+    </div>
+    <div class="adv">
+        <h1>OUR <span id="advt">SERVICES</span></h1>
+        <P>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod<br /> tempor invidunt ut labore
+            et dolore magna aliquyam erat.</P>
+    </div>
+    <div class="stars">
+        <div class="star">
+            <img src="./images/Stars.jpg" alt="" class="starg">
+            <h3>WEB DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod.</p>
+            <a href="#">Read more.</a>
+        </div>
+        <div class="star">
+            <img src="./images/Stars.jpg" alt="" class="starg">
+            <h3>GRAPHIC DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod.</p>
+            <a href="#">Read more.</a>
+        </div>
+        <div class="star">
+            <img src="./images/Stars.jpg" alt="" class="starg">
+            <h3>BRANDING</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod.</p>
+            <a href="#">Read more.</a>
+        </div>
+        <div class="star">
+            <img src="./images/Stars.jpg" alt="" class="starg">
+            <h3>MARKETING</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod.</p>
+            <a href="#">Read more.</a>
+        </div>
+
+    </div>
+    <div class="portfolio">
+
+        <div class="adv">
+            <h1 style="color: white;">OUR <span id="advt">PORTFOLIO</span></h1>
+            <P>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod<br /> tempor invidunt ut labore
+                et dolore magna aliquyam erat.</P>
+        </div>
+        <div class="portul">
+            <ul>
+                <a href="#">
+                    <li>WEB DESIGN</li>
+                </a>
+                <a href="#">
+                    <li>GRAPHIC DESIGN</li>
+                </a>
+                <a href="#">
+                    <li>BRANDING</li>
+                </a>
+                <a href="#">
+                    <li>LOGO</li>
+                </a>
+                <a href="#">
+                    <li>MARKETING</li>
+                </a>
+                <a href="#">
+                    <li>ADVERTISMENT</li>
+                </a>
+            </ul>
+        </div>
+        <div class="portimg">
+            <img src="./images/horse-logo.png" alt="" class="pimg i1">
+            <img src="./images/brain1.png" alt="" class="pimg i2">
+            <img src="./images/group.png" alt="" class="pimg i3">
+            <img src="./images/gratis.png" alt="" class="pimg i4">
+            <img src="./images/lion.png" alt="" class="pimg i5">
+            <img src="./images/growth.png" alt="" class="pimg i6">
+            <img src="./images/team.png" alt="" class="pimg i7">
+            <img src="./images/works.png" alt="" class="pimg i8">
+            <img src="./images/Trees.png" alt="" class="pimg i9">
+            <img src="./images/growth1.png" alt="" class="pimg i10">
+        </div>
+    </div>
+    <div class="process">
+        <div class="adv">
+            <h1>OUR <span id="advt">PROCESS</span></h1>
+            <P>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod<br /> tempor invidunt ut labore
+                et dolore magna aliquyam erat.</P>
+        </div>
+    </div>
+</body>
+
+</html>
