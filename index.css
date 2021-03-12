@@ -185,14 +185,35 @@ button {
   flex-wrap: wrap;
   padding: 10rem;
   margin-top: -10rem;
-  margin-left: 1.5%;
+  padding-left: 10%;
 }
 .pimg {
   width: 22rem;
   height: 20rem;
   padding: .3rem;
 }
-
+.people {
+  background-color: #71717136;
+}
+.user img {
+  border-radius: 50%;
+  width: 10rem;
+  height: auto;
+  background-color: rgb(255, 251, 251);
+}
+.user div {
+  display: inline;
+  text-align: left;
+  width: 30rem;
+}
+.user {
+  padding-left: 15rem;
+  margin-top: 5rem;
+}
+.users {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 
