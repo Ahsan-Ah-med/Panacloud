@@ -214,7 +214,76 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
+.project {
+  background-color: rgba(0, 184, 0, 0.65);
+}
+.project h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  font-style: oblique;
+  padding-top: 5rem;
+}
+.project form {
+  text-align: center;
+  width: 100%;
+  padding-top: 5rem;
+}
+.project p {
+  text-align: center;
+  color: white;
+  padding: 5rem;
+  font-size: 1.5rem;
+}
+.project form input[type="text"] ,input[type="email"] ,input[type="number"] {
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.808);
+}
 
+.project form input {
+  width: 20rem;
+  height: 3.5rem;
+}
+.project form input[type="submit"] {
+  border: none;
+  border-radius: .5rem;
+  text-decoration: none;
+  background-color: yellow;
+  font-size: 1.2rem;
+  width: 11rem;
+  font-weight: bold;
+}
+.project form input[type="submit"]:hover {
+  background-color: rgba(28, 173, 2, 0.897);
+  cursor: pointer;
+  outline: none;
+}
+.contact {
+  text-align: center;
+  width: 100%;
+  padding-left: 10rem;
+  position: relative;
+  /* margin-left: 10rem; */
+}
+.contact div span {
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+.icon span {
+  padding: 5rem;
+  display: inline;
+}
+ /* Set the size of the div element that contains the map */
+#map {
+  height: 40rem;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 
 
 
